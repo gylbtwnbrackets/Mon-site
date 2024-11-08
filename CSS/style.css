@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    animation: fadeOut ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: auto;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+a{
+    background-color: white;
+    color: white;
+    text-decoration: none;
+
+}
+h1 , .text{
+    background-color: black;
+    color: white;
+}
+
+
+
+@keyframes fadeOut {
+    0% {
+      opacity: 0;
+      background-color: black;
+    }
+    100% {
+      opacity: 1;
+      background-color: black;
+    }
+  }
+
+.button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 30px;
+    display: flex;
+    margin-top: 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.5s;
+  }
+.button:hover {
+    letter-spacing: 5px;
+}
+
+.slide{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+img {
+    width: 80%;
+    position: relative;
+    right: 0;
+}
