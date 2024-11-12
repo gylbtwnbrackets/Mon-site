@@ -7,6 +7,8 @@ body{
     animation-fill-mode: forwards;
     width: auto;
 
+
+
 }
 
 header{
@@ -16,15 +18,18 @@ header{
     color: white;
 }
 
-a{
+.button{
     background-color: white;
     color: white;
     text-decoration: none;
 
 }
 h1 , .text{
-    background-color: black;
-    color: white;
+  color: white;
+}
+.text{
+  font-size: xx-large;
+
 }
 
 
@@ -60,8 +65,22 @@ h1 , .text{
     right: 0;
     bottom: 0;
 }
-img {
-    width: 80%;
-    position: relative;
-    right: 0;
+
+
+.beatit{
+  width: 80%;
+  position: relative;
+  right: 0;
+
+}
+.babymj{
+  filter: brightness(0.5) saturate(0%);
+  right:0;
+  filter: grayscale(1);
+}
+
+.container{
+  width: 650px;
+  height: 450px;
+
 }
