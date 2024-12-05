@@ -25,7 +25,7 @@ header{
 }
 
 .button {
-  background-color: white;
+ 
   color: white;
   text-decoration: none;
   color: var(--secondary-color);
@@ -164,7 +164,7 @@ h1 , .text{
   z-index: 1000;
   opacity: 1;
   visibility: visible;
-  animation: fadeOut 4s forwards;
+  animation: fadeOut 2s forwards;
  
 }
 
