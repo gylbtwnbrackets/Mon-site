@@ -98,7 +98,7 @@ h1 , .text{
 
   display: flex;
   flex-wrap: wrap;
-  flex-direction: ;
+
   margin: 20px auto;
   padding: 15px;
   max-width: max-content;
@@ -126,7 +126,7 @@ h1 , .text{
   filter: brightness(0.5) saturate(0%);
   right:0;
   filter: grayscale(1);
-  width: 30%;
+  width: 40%;
   animation-name: slideRight ;
   animation-duration: 2s;
   display: flex;
