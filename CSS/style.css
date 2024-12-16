@@ -111,12 +111,27 @@ h1 , .text{
   background-color: black;
 
 }
+.parts2{
+  font-size: larger;
+  justify-content: center;
+  background-color: rgb(23, 21, 124);
+  transition: background-color 500ms ease-out 10ms;
+
+}
 .parts_child{
   margin-top: 10%;
   height: 200px;
   width: 200px;
 }
 
+.face{
+  
+  height: 200px;
+  width: 200px;
+  border-radius: 10EM;
+
+
+}
 .organized {
   display: grid;
   justify-content: left;
@@ -126,15 +141,15 @@ h1 , .text{
   filter: brightness(0.5) saturate(0%);
   right:0;
   filter: grayscale(1);
-  width: 40%;
+  width: 36%;
   animation-name: slideRight ;
   animation-duration: 2s;
+  
   display: flex;
-  justify-content: flex-start;
-  bottom: 0;
   box-sizing: border-box;
   position: absolute; 
   z-index: 1000;
+  
 
 }
 .grey{
@@ -195,7 +210,18 @@ h1 , .text{
 
 
 }
+.background{
+  margin : 20px;
+  background-color: black;
+  padding-top: 15px;
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-bottom:2%;
+  border-radius: 20px;
+  
 
+
+}
 
 .paragraph{
   background-color: black;
