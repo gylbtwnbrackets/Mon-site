@@ -2,7 +2,7 @@
 body   {
   display: flex;
   flex-direction: column;
-  background-image: url(/IMG/800301.jpg);
+  background-image: url(../IMG/800301.jpg);
   background-size: cover;
   font-family: "Merriweather", serif;
   font-weight: 300;
@@ -112,7 +112,7 @@ h1 , .text{
 
 .choose{
 
-  display: flex;
+  display: flex;de
   flex-wrap: wrap;
 
   margin: 20px auto;
@@ -228,13 +228,10 @@ h1 , .text{
 
 }
 .background{
-  margin : 20px;
+  margin : 0;
+  padding: 0;
   background-color: black;
-  padding-top: 15px;
-  padding-left: 40%;
-  padding-right: 40%;
-  padding-bottom:2%;
-  border-radius: 20px;
+
   
 
 
