@@ -228,13 +228,13 @@ h1 , .text{
 
 }
 .background{
-  margin : 0;
-  padding: 0;
+  margin : 20px;
   background-color: black;
-
-  
-
-
+  padding-top: 15px;
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-bottom:2%;
+  border-radius: 20px;
 }
 
 .paragraph{
