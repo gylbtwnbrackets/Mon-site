@@ -228,13 +228,16 @@ h1 , .text{
 
 }
 .background{
-  margin : 20px;
+  display: grid;
+  grid-row: auto;
+  justify-content: center;
+  width: 75%;
+  margin: 5%;
+  padding-top: 2%;
+  padding-bottom : 4%;
+  margin-left: 13%;
   background-color: black;
-  padding-top: 15px;
-  padding-left: 40%;
-  padding-right: 40%;
-  padding-bottom:2%;
-  border-radius: 20px;
+  border-radius: 2%;
 }
 
 .paragraph{
