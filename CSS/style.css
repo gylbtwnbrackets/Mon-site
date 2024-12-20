@@ -145,7 +145,7 @@ h1 , .text{
 }
 /* FOR ALBUM DESCRIPTIONS */
 .descriptions{
-  margin-right: 5%;
+ margin: 10px;
 
 }
 
@@ -170,6 +170,11 @@ h1 , .text{
 
 .center{
   text-align: center;
+
+}
+.align{
+  display: flex;
+  flex-direction: row;
 
 }
 /* PAGES WITH MULTIPLE UNDERPAGES (childhood,discography,other)*/
@@ -199,7 +204,6 @@ h1 , .text{
   margin: 5%;
   padding-top: 2%;
   padding-bottom : 4%;
-  margin-right: ;
   margin-left: 13%;
   background-color: black;
   border-radius: 2%;
@@ -241,36 +245,125 @@ h1 , .text{
  
 }
 
+/*MEDIA QUIERIES*/
 
+  /*Tablette */
+@media (max-width: 1024px) { 
 
-
-/* MEDIA QUERIES */
-/* Tablette */
-@media (max-width: 1024px) {
-    .parts {
-        height: 40vh;
-        width: 30vw;
-    }
-    .beatit{
-      width : 18%
-    }
-    .paragraph {
-        font-size: 3vw;
-    }
-
-    .button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    header {
-        flex-direction: row;
-        align-items: center;
-    }
+  .enter{
+    text-align: center;
   }
+  .parts_child{
+    margin-top: 10%;
+    height: 25vh;
+    width: 25vh;
+  }
+  .choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  a{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+  
+  
+  .parts  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 30%;
+      
+        
+    }
+  .parts_child{
+      width: 60%;
+    
+      height: 60%;
+      padding-bottom: 12%;
+    
+    }
+
+  .beatit{
+    margin-right : 100%;
+  }
+  .babymj{
+    left: 0;
+    padding-right: 100%;
+  }
+
+
+  body {
+      flex-direction: column;
+  }
+  .align{
+    flex-direction: column;
+  
+  }
+
+
+  .paragraph {
+    animation-name: slideRight ;
+    animation-duration: 2s;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 87%;
+    margin-left: 10px;
+    padding-left: px;
+    left: 0;
+    font-size:35px;
+    max-width: 90%;
+    
+    margin-bottom: 2%;
+    margin-top: 1%;
+    padding-bottom: 4%;
+
+
+  }
+
+  .button {
+      font-size: 1.2rem;
+      padding: 8px 16px;
+  }
+
+  header {
+      text-align: center;
+      justify-content: space-between;
+      gap: 1rem;
+  }
+
+  .background{
+    animation-name: slideRight ;
+    animation-duration: 2s;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin: 3% ;
+    padding-right: 10%;
+    background-color: black;
+    border-radius: 2%;
+ }
+}
+
+
 
   /* Téléphone */
   @media (max-width: 768px) {
+    .enter{
+      text-align: center;
+    }
     .choose {
       display: flex;
       flex-direction: column;
@@ -297,7 +390,7 @@ h1 , .text{
         
           
       }
-    .parts img{
+    .parts_child{
         width: 60%;
       
         height: 60%;
@@ -309,14 +402,18 @@ h1 , .text{
       margin-right : 100%;
     }
     .babymj{
-      margin-right : 100%;
+      left: 0;
+      padding-right: 100%;
     }
 
 
     body {
         flex-direction: column;
     }
-
+    .align{
+      flex-direction: column;
+    
+    }
 
 
     .paragraph {
