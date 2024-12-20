@@ -33,12 +33,6 @@ header{
   color: white;
 }
 
-.enter{
-  display: flex;
-  justify-content: center;
-  font-size: 53px;
-}
-
 .button {
  
   color: white;
@@ -62,22 +56,13 @@ h1 , .text{
   font-size: xx-large;
 }
 
-.bg{
-  position: absolute;
-  top: 0;
-  left:0;
-  min-width: 100%;
-  min-height: 100%;
-  }
-.description{
-  padding-left: 10%;
 
-
-
-
+/* FOR INDEX */
+.enter{
+  display: flex;
+  justify-content: center;
+  font-size: 53px;
 }
-/* INDEX */
-
 .beatit{
   box-sizing: border-box;
   width: 25%;
@@ -87,15 +72,37 @@ h1 , .text{
   animation-name: slideRight ;
   animation-duration: 2s;
   margin-right : 8%;
-  
-  
+}
+
+.paragraph{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  opacity: 87%;
+  margin-left: 10px;
+  padding-left: 10px;
+  left: 0;
+  font-size: 45px;
+  max-width: 70%;
+  text-align: left;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  padding-bottom: 4%;
+
+}
+/* FOR PAGES WITH SLIDE ANIMATIONS (index and childhood) */
+.organized {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  left:0;
 }
 
 /* CHILDHOOD & DISCOGRAPHY */
 .parts{
-  display: grid;
-  align-items: row  ;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
   background-color: rgb(0, 0, 0);
   transition: background-color 500ms ease-out 10ms;
   height : 40vh ;
@@ -105,22 +112,10 @@ h1 , .text{
   margin-left: 10px;
   left: 0;
 }
+
 .container{
   width: 650px;
   height: 450px;
-}
-
-.choose{
-
-  display: flex;
-  flex-wrap: wrap;
-
-  margin: 20px auto;
-  padding: 15px;
-  max-width: max-content;
-  overflow-x: auto;
-  overflow-y: auto;
-  white-space: nowrap;
 }
 
 .parts:hover{
@@ -148,11 +143,13 @@ h1 , .text{
 
 
 }
-.organized {
-  padding-top: 5%;
-  display: grid;
-  justify-content: left;
+/* FOR ALBUM DESCRIPTIONS */
+.descriptions{
+  margin-right: 5%;
+
 }
+
+
 /* CHILDHOOD ONLY */
 .babymj{
   filter: brightness(0.5) saturate(0%);
@@ -161,29 +158,52 @@ h1 , .text{
   width: 36%;
   animation-name: slideRight ;
   animation-duration: 2s;
-  
   display: flex;
   box-sizing: border-box;
-  position: absolute; 
-  z-index: 1000;
+ 
   
-
 }
 .grey{
   width: 100%;
   filter: grayscale(1);
 }
+
+.center{
+  text-align: center;
+
+}
+/* PAGES WITH MULTIPLE UNDERPAGES (childhood,discography,other)*/
+
+.choose{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: max-content;
+  overflow-x: auto;
+  overflow-y: auto;
+ 
+}
+
 /* DISCOGRAPHY ONLY */
 /* ABOUT */
-
-/* ANIMATION */
-
-
-
-  
-
-
-
+.background{
+  animation-name: slideRight ;
+  animation-duration: 2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+  margin: 5%;
+  padding-top: 2%;
+  padding-bottom : 4%;
+  margin-right: ;
+  margin-left: 13%;
+  background-color: black;
+  border-radius: 2%;
+}
 
 /* Animations */
 
@@ -217,99 +237,135 @@ h1 , .text{
   z-index: 1000;
   opacity: 1;
   visibility: visible;
-  animation: fadeOut 3s forwards;
+  animation: fadeOut 5s forwards;
  
 }
 
 
-.sizeit{
-  min-height: 100vh;
 
 
-}
-.background{
-  display: grid;
-  grid-row: auto;
-  justify-content: center;
-  width: 75%;
-  margin: 5%;
-  padding-top: 2%;
-  padding-bottom : 4%;
-  margin-left: 13%;
-  background-color: black;
-  border-radius: 2%;
-}
-
-.paragraph{
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-  opacity: 87%;
-  margin-left: 10px;
-  padding-left: 10px;
-  left: 0;
-  font-size: 45px;
-  max-width: 70%;
-  text-align: left;
-  margin-bottom: 2%;
-  margin-top: 1%;
-  padding-bottom: 4%;
-
-}
 /* MEDIA QUERIES */
 /* Tablette */
 @media (max-width: 1024px) {
-  .parts {
-      height: 40vh;
-      width: 30vw;
+    .parts {
+        height: 40vh;
+        width: 30vw;
+    }
+    .beatit{
+      width : 18%
+    }
+    .paragraph {
+        font-size: 3vw;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
   }
 
-  .paragraph {
-      font-size: 3vw;
-  }
-
-  .button {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-  }
-
-  header {
+  /* Téléphone */
+  @media (max-width: 768px) {
+    .choose {
+      display: flex;
       flex-direction: column;
       align-items: center;
-  }
-}
-
-/* Téléphone */
-@media (max-width: 768px) {
-  body {
+      justify-content: center;
+      gap: 5px;
+    }
+    a{
+      display: flex ;
       flex-direction: column;
-  }
+      align-items: center;
+      margin-bottom: 10px;
 
-  .parts {
-      width: 90%;
-      height: auto;
-  }
+    }
+    
+    
+    .parts  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+        
+          
+      }
+    .parts img{
+        width: 60%;
+      
+        height: 60%;
+        padding-bottom: 12%;
+      
+      }
+  
+    .beatit{
+      margin-right : 100%;
+    }
+    .babymj{
+      margin-right : 100%;
+    }
 
-  .paragraph {
-      font-size: 4vw;
-  }
 
-  .button {
-      font-size: 0.8rem;
-      padding: 8px 16px;
-  }
+    body {
+        flex-direction: column;
+    }
 
-  header {
-      flex-direction: column;
+
+
+    .paragraph {
+      animation-name: slideRight ;
+      animation-duration: 2s;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+      opacity: 87%;
+      margin-left: 10px;
+      padding-left: px;
+      left: 0;
+      font-size:35px;
+      max-width: 90%;
+      
+      margin-bottom: 2%;
+      margin-top: 1%;
+      padding-bottom: 4%;
+    
+
+    }
+
+    .button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .face{
+      margin-left: 15%;
+    }
+    .background{
+      animation-name: slideRight ;
+      animation-duration: 2s;
+      display: flex;
+      flex-direction:  column;
+      padding : 3%;
       text-align: center;
-      gap: 1rem;
-  }
-
-  .slide_intro img {
-      width: 100%;
-      height: auto;
+      width: 75%;
+      padding-top: 2%;
+      margin-right: 18%;
+      padding-bottom : 4%;
+      margin-left: 13%;
+      background-color: black;
+      border-radius: 2%;
   }
 }
-
-
