@@ -4,7 +4,7 @@ Ce site est un blog personnel qui présente plusieurs oeuvres de la discographie
 
 # Aperçu du site internet
 
-![[Capture d'écran 2024-12-20 093143.png]]
+![[capture.png]]
 
 # Description du Contenu Principal
 
