@@ -8,7 +8,7 @@ Ce site est un blog personnel qui présente plusieurs oeuvres de la discographie
 
 # Description du Contenu Principal
 
-### Page d'Acceuil :
+### Page d'Accueil :
 Cette page est plutôt simple et sert d'introduction au contenu du site internet
 ### Page "à propos" :
 Une page qui me présente moi et les raisons pour lesquelles j'ai décidé de créer ce site
@@ -20,6 +20,11 @@ Dans cette page on retrouve 3 de mes chansons préféré datant de l'enfance de 
 # Langages Utilisés :
 - HTML
 - CSS
+
+# "Features" Implémentées :
+- Responsives configuré pour les machines mobiles
+- Animations CSS simples pour le header
+- Loader/Ecran d'accueil au démarage du site
 
 # Lien vers le Github Pages
 - [Cliquez ici](https://gylbtwnbrackets.github.io/Mon-site/)
